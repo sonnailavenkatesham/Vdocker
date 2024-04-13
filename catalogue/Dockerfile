@@ -4,6 +4,5 @@ WORKDIR /app
 COPY package.json /app
 COPY server.js /app
 RUN npm install
-ENV MONGO=true\
-    MONGO_URL="mongodb://mongodb:27017/catalogue"
+ENV MONGO=true
 CMD [ "node", "server.js" ]
