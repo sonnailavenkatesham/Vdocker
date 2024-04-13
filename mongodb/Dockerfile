@@ -1,2 +1,2 @@
 FROM mongo:5
-ADD *.js /docker-entrypoint-initdb.d/
+COPY catalogue.js /docker-entrypoint-initdb.d/
